@@ -53,10 +53,8 @@ const QrReadPage = () => {
 		console.log("handle");
 		verifyJwtToken(decodedToken);
 	};
-	const validateToken = (t: string) => t.match(/^[a-f0-9]{128}$/i);
 	const isTokenInvalid = React.useMemo(() => {
 		if (token === "") return false;
-		return validateToken(token || "") ? false : true;
 	}, [token]);
 
 	return (
@@ -81,8 +79,8 @@ const QrReadPage = () => {
 							variant="flat"
 							formNoValidate={true}
 							color="success"
-							isInvalid={isTokenInvalid}
-							errorMessage={isTokenInvalid && `Token must be a valid sha512 hash.`}
+							isInvalid={token === ""}
+							errorMessage={token === "" && `Token can't be empty`}
 							defaultValue={token || ""}
 							className="max-w-xs text-medium"
 							onValueChange={(value) => {

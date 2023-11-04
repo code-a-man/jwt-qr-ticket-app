@@ -20,7 +20,7 @@ export default function App() {
         </CardHeader>
         <Divider />
         <CardBody>
-          <p>Generate tickets using hs512 jwt and scan on event start to get started follow the page:</p>
+          <p>Generate tickets using jwt and scan on event start to verify tickets. Get started following page:</p>
           <Link href="/qr-read?token=your-secret-sha512-key">Ticket Reading Page</Link>
         </CardBody>
         <Divider />
