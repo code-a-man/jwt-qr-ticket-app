@@ -1,0 +1,17 @@
+{
+  "name": "JWT Ticket Verifier",
+  "short_name": "jwtqrticket",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "qr-logo.png",
+      "sizes": "653x653",
+      "type": "image/png"
+    }
+  ]
+}

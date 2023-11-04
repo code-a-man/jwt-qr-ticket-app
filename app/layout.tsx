@@ -17,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        favicon
         <link rel="icon" href="/qr-logo.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.className} dark text-foreground bg-background`}>{children}</body>
     </html>
